@@ -30,6 +30,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Lista arquivos para debug
+      - name: List files
+        run: |
+          echo "Arquivos no repositório:"
+          ls -la
+          echo "Verificando se efeitos.json existe:"
+          if [ -f "efeitos.json" ]; then
+            echo "✅ efeitos.json encontrado"
+            head -10 efeitos.json
+          else
+            echo "❌ efeitos.json NÃO encontrado"
+          fi
+
       # Setup do GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v4

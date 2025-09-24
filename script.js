@@ -14,16 +14,49 @@ const rangeTexto = document.getElementById("rangeTexto");
 // Carrega os dados do arquivo JSON
 async function carregarEfeitos() {
   try {
-    const response = await fetch("efeitos.json");
+    console.log("Tentando carregar efeitos.json...");
+    const response = await fetch("./efeitos.json");
+
     if (!response.ok) {
+      console.error(`Erro HTTP: ${response.status} ${response.statusText}`);
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    efeitosData = await response.json();
-    console.log("Efeitos carregados com sucesso!");
+
+    const data = await response.json();
+    console.log("Dados carregados:", data);
+
+    if (!data.wild_magic_surge || !Array.isArray(data.wild_magic_surge)) {
+      throw new Error("Estrutura do JSON inválida");
+    }
+
+    efeitosData = data;
+    console.log(
+      "Efeitos carregados com sucesso! Total:",
+      data.wild_magic_surge.length
+    );
   } catch (error) {
-    console.error("Erro ao carregar efeitos:", error);
+    console.error("Erro detalhado ao carregar efeitos:", error);
+    console.error("URL atual:", window.location.href);
+    console.error(
+      "Tentando carregar de:",
+      new URL("./efeitos.json", window.location.href).href
+    );
+
+    // Tenta carregar com caminho alternativo
+    try {
+      console.log("Tentando caminho alternativo...");
+      const response2 = await fetch("efeitos.json");
+      if (response2.ok) {
+        efeitosData = await response2.json();
+        console.log("Carregado com caminho alternativo!");
+        return;
+      }
+    } catch (error2) {
+      console.error("Caminho alternativo também falhou:", error2);
+    }
+
     alert(
-      "Erro ao carregar os efeitos de magia. Verifique se o arquivo efeitos.json está presente."
+      "Erro ao carregar os efeitos de magia. Verifique o console para mais detalhes."
     );
   }
 }
@@ -68,6 +101,17 @@ function exibirEfeito(numero, animarNumero = true) {
 }
 
 function mostrarEfeito(numero) {
+  // Verifica se todos os elementos existem antes de usar
+  if (!efeitoTexto || !explicacaoTexto || !rangeTexto) {
+    console.error("Elementos do DOM não encontrados:", {
+      efeitoTexto: !!efeitoTexto,
+      explicacaoTexto: !!explicacaoTexto,
+      rangeTexto: !!rangeTexto,
+    });
+    alert("Erro: Elementos da página não foram carregados corretamente.");
+    return;
+  }
+
   const efeito = encontrarEfeito(numero);
 
   if (efeito) {
