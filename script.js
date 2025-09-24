@@ -202,7 +202,7 @@ async function buscarEfeito() {
 
     // Reabilita o botão
     buscarBtn.disabled = false;
-    buscarBtn.textContent = "🔍 Buscar";
+    buscarBtn.textContent = "🔍";
 
     // Limpa o input
     numeroManual.value = "";

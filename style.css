@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
     background: #0a0a0a;
     background-image: 
         radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%),
@@ -75,27 +75,18 @@ header p {
     text-align: center;
 }
 
-.input-label {
-    display: block;
-    color: #444;
-    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    margin-bottom: 1rem;
-    font-weight: 500;
-}
-
 .input-container {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: stretch;
-    flex-wrap: wrap;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 .numero-input {
     flex: 1;
-    max-width: 200px;
-    min-width: 120px;
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     border: 2px solid #e0e0e0;
     border-radius: 15px;
     background: #fff;
@@ -126,8 +117,8 @@ header p {
     background: linear-gradient(135deg, #7877c6, #ff77c6);
     color: white;
     border: none;
-    padding: 0.8rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     border-radius: 15px;
     cursor: pointer;
@@ -135,8 +126,7 @@ header p {
     box-shadow: 
         0 4px 15px rgba(120, 119, 198, 0.3),
         0 0 20px rgba(255, 119, 198, 0.2);
-    white-space: nowrap;
-    min-width: fit-content;
+    min-width: 50px;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
@@ -180,8 +170,8 @@ header p {
     background: linear-gradient(135deg, #3a86ff, #7877c6, #ff77c6);
     color: white;
     border: 2px solid #fff;
-    padding: 1rem 2rem;
-    font-size: clamp(1rem, 3vw, 1.3rem);
+    padding: 1rem clamp(1rem, 4vw, 2rem);
+    font-size: clamp(1.1rem, 3vw, 1.6rem);
     font-weight: bold;
     border-radius: 25px;
     cursor: pointer;
@@ -191,12 +181,14 @@ header p {
         0 0 40px rgba(120, 119, 198, 0.2),
         0 0 60px rgba(255, 119, 198, 0.1);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: clamp(0.5px, 0.5vw, 1px);
     position: relative;
     overflow: hidden;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 300px;
+    max-width: min(90vw, 320px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .sortear-btn:hover {
@@ -238,7 +230,6 @@ header p {
     width: 100%;
     text-align: center;
     animation: fadeInUp 0.6s ease;
-    margin-top: 1rem;
 }
 
 @keyframes fadeInUp {
@@ -257,28 +248,24 @@ header p {
     color: white;
     padding: 1rem;
     border-radius: 20px;
-    margin-bottom: 1.5rem;
+    margin: 0.5rem auto 1rem auto;
+    width: 80px;
+    height: 80px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     box-shadow: 
         0 8px 25px rgba(58, 134, 255, 0.4),
         0 0 40px rgba(120, 119, 198, 0.3);
     border: 2px solid #fff;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.numero-sorteado span:first-child {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-    font-weight: 500;
 }
 
 .numero {
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
     font-weight: bold;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    line-height: 1;
 }
 
 .efeito-container {
@@ -362,32 +349,32 @@ header p {
     }
     
     .input-container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.8rem;
+        max-width: none;
+        flex-direction: row;
+        gap: 0.5rem;
     }
     
     .numero-input {
-        max-width: none;
-        min-width: auto;
+        flex: 1;
     }
     
     .buscar-btn {
-        width: 100%;
-        padding: 1rem;
+        padding: 0.6rem;
+        min-width: 45px;
     }
     
     .sortear-btn {
-        padding: 1rem 1.5rem;
+        padding: 1rem clamp(0.5rem, 2vw, 1rem);
+        font-size: clamp(0.7rem, 2vw, 1rem);
+        letter-spacing: clamp(0.3px, 0.3vw, 0.8px);
         max-width: none;
         width: 100%;
     }
     
     .numero-sorteado {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-        padding: 1.2rem;
+        width: 70px;
+        height: 70px;
+        margin: 0.5rem auto 1rem auto;
     }
     
     .efeito-container {
@@ -409,6 +396,11 @@ header p {
         padding: 0.2rem 0.8rem;
         font-size: 0.7rem;
     }
+    
+    .numero-sorteado {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 /* Melhorias para telas muito pequenas */
@@ -419,5 +411,14 @@ header p {
     
     .efeito-container {
         padding: 1rem;
+    }
+    
+    .input-container {
+        gap: 0.3rem;
+    }
+    
+    .buscar-btn {
+        min-width: 40px;
+        padding: 0.6rem 0.5rem;
     }
 }

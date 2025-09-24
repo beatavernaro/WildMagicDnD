@@ -121,7 +121,7 @@
       "explanation": "Você e todos próximos sofrem dano dobrado de perfuração por 1 minuto."
     },
     {
-      "range": "97-00",
+      "range": "97-100",
       "effect": "Jogue 1d6:\n1. Você recupera 2d10 Pontos de Vida.\n2. Um aliado à sua escolha a até 90 metros de você recupera 2d10 Pontos de Vida.\n3. Você recupera seu espaço de magia gasto de menor círculo.\n4. Um aliado à sua escolha a até 90 metros de você recupera o espaço de magia gasto de menor círculo.\n5. Você restaura todos os seus Pontos de Feitiçaria gastos.\n6. Todos os efeitos da linha 17–20 o afetam simultaneamente.",
       "explanation": "Você recebe um efeito aleatório poderoso de cura ou magia."
     }
