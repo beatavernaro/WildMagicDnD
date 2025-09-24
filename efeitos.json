@@ -7,7 +7,7 @@
     },
     {
       "range": "05-08",
-      "effect": "Uma criatura Amigável aparece em um espaço desocupado aleatório a até 18 metros de você. A criatura está sob o controle do Mestre e desaparece depois de 1 minuto. Jogue 1d4 para determinar a criatura: em um 1, aparece um Modron Duodrone; em um 2, aparece um Flunf; em um 3, aparece um Modron Monodrone; em um 4, aparece um Unicórnio. Veja o Livro dos Monstros para o bloco de estatísticas da criatura.",
+      "effect": "Uma criatura Amigável aparece em um espaço desocupado aleatório a até 18 metros de você. A criatura está sob o controle do Mestre e desaparece depois de 1 minuto.\n\nJogue 1d4 para determinar a criatura:\n1. Modron Duodrone\n2. Flunf\n3. Modron Monodrone\n4. Unicórnio\n\nVeja o Livro dos Monstros para o bloco de estatísticas da criatura.",
       "explanation": "Uma criatura mágica aparece temporariamente para ajudar você por 1 minuto."
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "range": "17-20",
-      "effect": "Você está sujeito a um efeito que dura 1 minuto, a menos que a descrição diga o contrário. Jogue 1d8 para determinar o efeito: em um 1, você é cercado por uma música fraca e etérea que apenas você e criaturas a até 1,5 metro de você podem ouvir; em um 2, seu tamanho aumenta em uma categoria de tamanho; em um 3, cresce em você uma longa barba de plumas que permanecem até você espirrar, momento em que as plumas explodem do seu rosto e desaparecem; em um 4, você deve gritar quando fala; em um 5, borboletas ilusórias tremulam no ar a até 3 metros de você; em um 6, um olho aparece em sua testa, concedendo-lhe Vantagem em testes de Sabedoria (Percepção); em um 7, bolhas rosas flutuam da sua boca sempre que você fala; em um 8, sua pele adquire um tom vibrante de azul por 24 horas ou até que o efeito seja encerrado por uma magia Remover Maldição.",
+      "effect": "Você está sujeito a um efeito que dura 1 minuto, a menos que a descrição diga o contrário.\n\nJogue 1d8 para determinar o efeito:\n1. Você é cercado por uma música fraca e etérea que apenas você e criaturas a até 1,5 metro de você podem ouvir.\n2. Seu tamanho aumenta em uma categoria de tamanho.\n3. Cresce em você uma longa barba de plumas que permanecem até você espirrar, momento em que as plumas explodem do seu rosto e desaparecem.\n4. Você deve gritar quando fala.\n5. Borboletas ilusórias tremulam no ar a até 3 metros de você.\n6. Um olho aparece em sua testa, concedendo-lhe Vantagem em testes de Sabedoria (Percepção).\n7. Bolhas rosas flutuam da sua boca sempre que você fala.\n8. Sua pele adquire um tom vibrante de azul por 24 horas ou até que o efeito seja encerrado por uma magia Remover Maldição.",
       "explanation": "Você sofre uma transformação mágica aleatória, geralmente cômica ou estranha."
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "range": "45-48",
-      "effect": "Você e até três criaturas à sua escolha a até 9 metros de você têm a condição Invisível por 1 minuto. Essa invisibilidade se encerra em uma criatura imediatamente após ela realizar uma jogada de ataque, causar dano ou conjurar uma magia.",
+      "effect": "Você e até três criaturas à sua escolha a até 9 metros de você têm a condição Invisível por 1 minuto.\n\nEssa invisibilidade se encerra em uma criatura imediatamente após ela realizar uma jogada de ataque, causar dano ou conjurar uma magia.",
       "explanation": "Você e aliados ficam invisíveis até atacarem ou conjurarem magia."
     },
     {
@@ -72,7 +72,7 @@
     },
     {
       "range": "57-60",
-      "effect": "Você conjura uma magia aleatória. Se a magia normalmente requer Concentração, ela não requer Concentração neste caso; a magia se mantém pela duração total. Jogue 1d10 para determinar a magia: em um 1, Confusão; em um 2, Bola de Fogo; em um 3, Névoa Obscurecente; em um 4, Voo (conjurado em uma criatura aleatória a até 18 metros de você); em um 5, Graxa; em um 6, Levitação (conjurado em si); em um 7, Mísseis Mágicos (conjurado como uma magia de 5º círculo); em um 8, Reflexos; em um 9, Polimorfia (conjurado em si), e se você falhar na salvaguarda, você se transforma em uma Cabra; em um 10, Ver o Invisível.",
+      "effect": "Você conjura uma magia aleatória. Se a magia normalmente requer Concentração, ela não requer Concentração neste caso; a magia se mantém pela duração total.\n\nJogue 1d10 para determinar a magia:\n1. Confusão\n2. Bola de Fogo\n3. Névoa Obscurecente\n4. Voo (conjurado em uma criatura aleatória a até 18 metros de você)\n5. Graxa\n6. Levitação (conjurado em si)\n7. Mísseis Mágicos (conjurado como uma magia de 5º círculo)\n8. Reflexos\n9. Polimorfia (conjurado em si), e se você falhar na salvaguarda, você se transforma em uma Cabra (veja o apêndice B)\n10. Ver o Invisível",
       "explanation": "Uma magia aleatória é conjurada automaticamente."
     },
     {
@@ -102,12 +102,12 @@
     },
     {
       "range": "81-84",
-      "effect": "Você irradia Luz Plena em um raio de 9 metros pelo próximo minuto. Qualquer criatura que termine o turno a até 1,5 metro de você tem a condição Cego até o final do próximo turno dela.",
+      "effect": "Você irradia Luz Plena em um raio de 9 metros pelo próximo minuto.\n\nQualquer criatura que termine o turno a até 1,5 metro de você tem a condição Cego até o final do próximo turno dela.",
       "explanation": "Você brilha e cega inimigos muito próximos por 1 minuto."
     },
     {
       "range": "85-88",
-      "effect": "Até três criaturas à sua escolha, à sua vista e a até 9 metros de você, sofrem 1d10 pontos de dano Necrótico. Você recupera Pontos de Vida iguais à soma do dano Necrótico causado.",
+      "effect": "Até três criaturas à sua escolha, à sua vista e a até 9 metros de você, sofrem 1d10 pontos de dano Necrótico.\n\nVocê recupera Pontos de Vida iguais à soma do dano Necrótico causado.",
       "explanation": "Você drena vida de até 3 criaturas e se cura com o dano."
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "range": "97-00",
-      "effect": "Jogue 1d6. Em um 1, você recupera 2d10 Pontos de Vida; em um 2, um aliado à sua escolha a até 90 metros de você recupera 2d10 Pontos de Vida; em um 3, você recupera seu espaço de magia gasto de menor círculo; em um 4, um aliado à sua escolha a até 90 metros de você recupera o espaço de magia gasto de menor círculo; em um 5, você restaura todos os seus Pontos de Feitiçaria gastos; em um 6, todos os efeitos da linha 17–20 o afetam simultaneamente.",
+      "effect": "Jogue 1d6:\n1. Você recupera 2d10 Pontos de Vida.\n2. Um aliado à sua escolha a até 90 metros de você recupera 2d10 Pontos de Vida.\n3. Você recupera seu espaço de magia gasto de menor círculo.\n4. Um aliado à sua escolha a até 90 metros de você recupera o espaço de magia gasto de menor círculo.\n5. Você restaura todos os seus Pontos de Feitiçaria gastos.\n6. Todos os efeitos da linha 17–20 o afetam simultaneamente.",
       "explanation": "Você recebe um efeito aleatório poderoso de cura ou magia."
     }
   ]

@@ -115,8 +115,9 @@ function mostrarEfeito(numero) {
   const efeito = encontrarEfeito(numero);
 
   if (efeito) {
-    efeitoTexto.textContent = efeito.effect;
-    explicacaoTexto.textContent = efeito.explanation;
+    // Converte quebras de linha \n em <br> para exibição correta no HTML
+    efeitoTexto.innerHTML = efeito.effect.replace(/\n/g, "<br>");
+    explicacaoTexto.innerHTML = efeito.explanation.replace(/\n/g, "<br>");
     rangeTexto.textContent = `Range: ${efeito.range}`;
   } else {
     efeitoTexto.textContent = "Efeito não encontrado para este número.";
