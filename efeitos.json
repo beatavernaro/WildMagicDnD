@@ -1,0 +1,54 @@
+{
+  "wild_magic_surge": [
+    {
+      "range": "01-04",
+      "effect": "Jogue nesta tabela no início de cada um dos seus turnos pelo próximo minuto, ignorando este resultado nas jogadas subsequentes.",
+      "explanation": "Por 1 minuto, você vai rolar nesta tabela a cada turno, gerando vários efeitos mágicos em sequência."
+    },
+    {
+      "range": "05-08",
+      "effect": "Uma criatura Amigável aparece em um espaço desocupado aleatório a até 18 metros de você. A criatura está sob o controle do Mestre e desaparece depois de 1 minuto. Jogue 1d4 para determinar a criatura: em um 1, aparece um Modron Duodrone; em um 2, aparece um Flunf; em um 3, aparece um Modron Monodrone; em um 4, aparece um Unicórnio. Veja o Livro dos Monstros para o bloco de estatísticas da criatura.",
+      "explanation": "Você invoca temporariamente uma criatura mágica que ajuda, mas desaparece após 1 minuto."
+    },
+    {
+      "range": "09-12",
+      "effect": "Pelo próximo minuto, você recupera 5 Pontos de Vida no início de cada um dos seus turnos.",
+      "explanation": "Regeneração de vida automática em todos os turnos por 1 minuto."
+    },
+    {
+      "range": "13-16",
+      "effect": "Criaturas têm Desvantagem em salvaguardas contra a próxima magia que você conjurar no minuto seguinte, que envolva uma salvaguarda.",
+      "explanation": "Sua próxima magia será mais difícil de resistir."
+    },
+    {
+      "range": "17-20",
+      "effect": "Você está sujeito a um efeito que dura 1 minuto, a menos que a descrição diga o contrário. Jogue 1d8 para determinar o efeito: em um 1, você é cercado por uma música fraca e etérea que apenas você e criaturas a até 1,5 metro de você podem ouvir; em um 2, seu tamanho aumenta em uma categoria de tamanho; em um 3, cresce em você uma longa barba de plumas que permanecem até você espirrar, momento em que as plumas explodem do seu rosto e desaparecem; em um 4, você deve gritar quando fala; em um 5, borboletas ilusórias tremulam no ar a até 3 metros de você; em um 6, um olho aparece em sua testa, concedendo-lhe Vantagem em testes de Sabedoria (Percepção); em um 7, bolhas rosas flutuam da sua boca sempre que você fala; em um 8, sua pele adquire um tom vibrante de azul por 24 horas ou até que o efeito seja encerrado por uma magia Remover Maldição.",
+      "explanation": "Você sofre uma transformação ou efeito estranho e mágico, geralmente engraçado ou chamativo."
+    },
+    {
+      "range": "21-24",
+      "effect": "Pelo próximo minuto, todas as suas magias com um tempo de conjuração de uma ação têm um tempo de conjuração de uma Ação Bônus.",
+      "explanation": "Durante 1 minuto, você conjura magias de forma muito mais rápida."
+    },
+    {
+      "range": "25-28",
+      "effect": "Você é transportado para o Plano Astral até o final do seu próximo turno. Em seguida, você retorna ao espaço que ocupava anteriormente ou ao espaço desocupado mais próximo, se esse espaço estiver ocupado.",
+      "explanation": "Você some do campo de batalha por 1 turno e retorna logo depois."
+    },
+    {
+      "range": "29-32",
+      "effect": "Na próxima vez que você conjurar uma magia que cause dano no minuto seguinte, não jogue os dados de dano da magia para o dano. Em vez disso, use o número mais alto possível para cada dado de dano.",
+      "explanation": "Sua próxima magia de dano causa o máximo de dano possível."
+    },
+    {
+      "range": "33-36",
+      "effect": "Você tem Resistência a todos os tipos de dano pelo próximo minuto.",
+      "explanation": "Você recebe metade de todo dano sofrido por 1 minuto."
+    },
+    {
+      "range": "37-40",
+      "effect": "Você se transforma em um vaso de plantas até o início do seu próximo turno. Enquanto é uma planta, você tem a condição Incapacitado e tem Vulnerabilidade a todos os tipos de dano. Se você atingir 0 Pontos de Vida, o seu vaso quebra e você reverte à sua forma original.",
+      "explanation": "Você vira literalmente um vaso de planta por 1 turno — totalmente vulnerável e incapaz de agir."
+    }
+  ]
+}

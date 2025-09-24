@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorteio de Efeitos de Magia Selvagem</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Wild Magic</h1>
+      </header>
+
+      <main>
+        <div class="sorteio-section">
+          <div class="input-section">
+            <label for="numeroManual" class="input-label"> </label>
+            <div class="input-container">
+              <input
+                type="number"
+                id="numeroManual"
+                class="numero-input"
+                min="1"
+                max="100"
+                placeholder="Digite um número..."
+              />
+              <button id="buscarBtn" class="buscar-btn">🔍 Buscar</button>
+            </div>
+          </div>
+
+          <div class="divider">
+            <span class="divider-text">OU</span>
+          </div>
+
+          <button id="sortearBtn" class="sortear-btn">
+            ✨ Efeito de Surto de Magia ✨
+          </button>
+
+          <div id="resultado" class="resultado" style="display: none">
+            <div class="numero-sorteado">
+              <span>Número Sorteado:</span>
+              <span id="numeroSorteado" class="numero"></span>
+            </div>
+            <div class="efeito-container">
+              <h3>Efeito:</h3>
+              <p id="efeitoTexto" class="efeito-texto"></p>
+              <div id="explicacaoTexto" class="explicacao-texto"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
